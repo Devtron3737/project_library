@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sweet Site</title>
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/tabs.js"></script>
+    <link href="../css/tabs.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <ul class='tabs' data-content-tabs='.content-tabs'>
+      <li><a href='#' for='#maltese' class='active'>Maltese</a></li>
+      <li><a href='#' for='#boxer'>Boxer</a></li>
+      <li><a href='#' for='#poodle'>Poodle</a></li>
+    </ul>
+
+    <section class='content-tabs' >
+      <article class='active' id='maltese'><p>Maltese are hypoallergenic!!</p></article>
+      <article id='boxer'><p>Boxers are super playful</p></article>
+      <article id='poodle'><p>Poodles are smart</p></article>
+    </section>
+    <script>
+      $(function() {
+        $('.tabs').tabs();
+      })
+    </script>
+  </body>
+</html>

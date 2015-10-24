@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sweet Site</title>
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/carousel.js"></script>
+    <link href="../css/carousel.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <figure class='carousel'>
+      <section class='item'>
+        <img class='active' src='../img/dog.jpg'>
+        <img src='../img/dog2.jpg'>
+        <img src='../img/dog3.jpg'>
+      </section>
+
+      <button class='slide-left'>Next</button>
+      <button class='slide-right'>Prev</button>
+    </figure>
+
+    <script>
+      $(function () {
+        $('.carousel').carousel();
+      })
+    </script>
+  </body>
+</html>
